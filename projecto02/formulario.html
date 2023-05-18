@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    * { font-family: 'Times New Roman', Times, serif;}
+</style>
+<form action="formulario.php" method="post" autocomplete="on">
+    <fieldset>
+
+        <legend><p><h2>Consultas</h2></p></legend>
+        <p><label for="idata">Data:</label> <input type="date" name="data" id="idata"> <label for="ihora">Hara:</label> <input type="time" name="hora" id="ihora" required></p>
+    </fieldset>
+    <fieldset>
+        <legend><p><h2>Protuário</h2></p></legend>
+        
+        <p><label for="idata">Data:</label> <input type="date" name="data" id="idata" autocomplete="date"></p>
+        <p><label for="idiagnostico">Diagnóstico:</label> <input type="text" name="diagnostico" id="idiagnostico" size="50"></p>
+    </fieldset>
+<fieldset>
+    <legend><p><h2>Internções</h2></p></legend>
+
+    <p>Internado(a): <label for="isim">Sim</label> <input type="radio" name="internado" id="isim"> <label for="inao">Não</label> <input type="radio" name="internado" id="inao"></p> 
+</fieldset>
+<fieldset>
+    <legend><P><h2>Medicamentos: </h2></P></legend>
+         <p><label for="iid">ID</label> <input type="text" name="id" id="iid" required size=""> </p>
+            <p><label for="inome">Nome: </label>
+                <ol> 
+                     <li> <input type="text" name="nome" id="inome"></li>
+                     <li><input type="text" name="nome" id="inome"></li>
+                     <li><input type="text" name="nome" id="inome"></li>
+                     <li><input type="text" name="nome" id="inome"></li>
+                     <li><input type="text" name="nome" id="inome"></li>
+                     <li><input type="text" name="nome" id="inome"></li>
+
+                </ol>
+
+             <p><label for="idescricao">Descrição: <br></label> <textarea name="descricao" id="idescricao" cols="60" rows="10"></textarea></p>
+             <p><label for="idosagem">Dosagem: <br></label><textarea name="dosagem" id="idosagem" cols="30" rows="10"></textarea></p>
+             <p><label for="iefeitos">Efeitos Colaterais <br></label><textarea name="efeitos" id="iefeitos" cols="50" rows="10"></textarea></p>
+             <input type="submit" value="Enviar">
+             <input type="reset" value="Limpar Dados">
+
+
+</fieldset>
+
+
+
+
+</form>
+<body>
+    
+</body>
+</html>

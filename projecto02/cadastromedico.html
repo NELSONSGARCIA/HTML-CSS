@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        * {font-family: 'Times New Roman', Times, serif;}
+    </style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+   
+    <fieldset>
+        <legend><h2>Dados do Médico</h2></legend>
+        <form action="cadastromedico.php" method="post">
+            <p><label for="inome">Nome Completo: </label><input type="text" name="nome" id="inome" required maxlength="30" size="30"></p>
+            <p><label for="ibi">B.I. Número: </label><input type="text" name="bi" id="ibi" size="15" maxlength="15" required></p>
+            <p><label for="iespecialidade">Especialidade: </label><input type="text" name="especialidade" id="iespecialidade" size="20" maxlength="20" requerid></p>
+            <p><label for="iregistro">Número de Registo Médico: </label><input type="number" name="registro" id="iregistro" maxlength="15" size="15"></p>
+            <p><label for="itel">Telefone: </label><input type="tel" name="tel" id="itel" required pattern="^\d{3,4}-\d{3}-\d{3}-\d{3}$" placeholder="xxx-xxx-xxx"></p>
+            <p><label for="iemail">Email: </label><input type="email" name="email" id="iemail" maxlength="20" size="20" placeholder="exemplo@gmail.com"></p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar Dados">
+    </fieldset>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

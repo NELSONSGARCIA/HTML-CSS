@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Paciente</title>
+</head>
+<body>
+    <style>
+        * {font-family: Arial, Helvetica, sans-serif;}
+    </style>
+<p><h1>Cadastro Paciente</h1></p>
+    <form action="registro.php" autocomplete="on" method="post">
+<fieldset>
+    <legend><h2>Dados Pessoais</h2></legend>
+    <p><label for="inome">Nome Completo:</label> <input type="text" name="nome" id="inome" required size="30" minlength="4" maxlength="30" autocomplete="name"></p>
+    <p><label for="idata">Data de Nascimento:</label> <input type="date" name="data" id="idata" required></p>
+    <p>Endereço: <input type="text" name="endereco" id="iendereco" maxlength="20" size="20"></p>
+    <p>B.I. ou Cédula: <input type="text" name="bi" id="ibi" size="15"></p>
+    <p>Gênero: </p>
+    <p><label for="imasculino">Masculino</label> <input type="radio" name="genero" id="imasculino">   
+    <label for="ifeminino">Feminino </label> <input type="radio" name="genero" id="ifeminino"></p>
+</fieldset>
+
+<p>Nível de Acesso: <select name="nivel" id="inivel">
+    <option value="adm">Administrador</option>
+    <option value="adm">Médico</option>
+    <option value="adm">Infermeiro</option>
+</select></p>
+
+
+<p><input type="submit" value="Enviar">
+<input type="reset" value="Limpar"></p>
+<p><a href="login.html"> Logar</a></p>
+</form>
+</body>
+</html>

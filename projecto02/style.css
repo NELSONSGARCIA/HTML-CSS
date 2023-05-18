@@ -1,0 +1,43 @@
+@charset "UTF8";
+
+* {font-family: 'Times New Roman', Times, serif;}
+
+body {background-color: #B2BEBF;}
+
+form {background-color: #ffffff; width: 250px; padding: 15px;margin: auto; box-shadow: 15px 15px 20px rgba(75, 74, 74, 0.178); border-radius: 15px;}
+
+h1 {font-size: 20px;}
+h2 {font-size: 25px; color: #BD2A2E;}
+h3 {font-size: 14px; }
+
+.submit {width: 100%;
+    height: 35px;
+    background-color: #486966;
+    border: none;
+    color: #e1e1e1;
+    margin: 10px 0;
+   border-radius: 10px;
+   font-size: 16px;
+   }
+
+   .title {font-size: 20px;
+    color: black;
+    width: 100%;
+    border-radius: 30px;
+    height: auto;
+    background-color: #bd2a2fe8;
+
+}
+.senha {
+    color: #BD2A2E;
+    font-size: 12px;
+}
+.demail {
+    background-color: transparent;
+    border: #486966;
+    border-radius: 2px;
+    size: 16px;
+  
+   
+    
+}
